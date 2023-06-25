@@ -1,0 +1,847 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Karantina:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
+body {
+    direction: rtl;
+    width: 1280px;
+    height: auto;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+
+/*תפריט ראשי*/
+
+
+#mainNav ul {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    
+}
+
+#mainNav ul li {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+    #mainNav ul li a {
+        line-height: 15px;
+        display: block;
+        color: #06402A;
+        width: 120px;
+        height: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 12pt;
+        padding-top: 10px;
+        background-color:white;
+    }
+
+
+        #mainNav ul li ul a {
+            display: block;
+            width: 50px;
+            height: 20px;
+            
+       
+        }
+
+
+    #mainNav ul li:hover a {
+        text-decoration: underline;
+        text-decoration-color: #06402A;
+    }
+
+
+        #mainNav ul li ul {
+            display: none;
+            position: absolute;
+        }
+    #mainNav ul li:hover ul {
+        display: block;
+        width: 100px;
+        height: 250px;
+        color: #06402A;
+        text-align: right;
+        background-color: white;
+    }
+   
+
+
+    .notActive { 
+        cursor: not-allowed;
+    }
+
+   /* תפריט פירורי לחם*/
+
+.breadNav ul li {
+    display: inline-block;
+    font-size: 14pt;
+    margin-bottom: 10%;
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+    float: right;
+}
+
+   .breadNav ul li:after { 
+       content: ">";
+   }
+
+    .breadNav ul li:last-child::after {
+        content: "";
+       
+    }
+    .breadNav ul li a {
+        color: #06402A;
+        text-decoration: none;
+    }
+
+#breadPizza {
+    padding-top: 3%;
+    color: white;
+}
+
+#breadPizza ul li a { 
+    color: white;
+}
+
+ #breadEventNav ul li a{ 
+    color: white;
+}
+
+ #breadEventNav ul li { 
+     color: white;
+     
+ }
+
+ #breadContactUs { 
+     padding-top: 5%;
+     margin-right: 5%;
+ }
+
+
+#breadSite {
+    
+    padding-top: 3%;
+    margin-right: 5%;
+}
+
+    /*<----footer---->*/
+
+#footerNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   
+}
+
+#footerNav ul li { 
+    display: inline-block;
+}
+
+#footerNav ul:hover il {
+    text-decoration: underline;
+}
+
+#footerNav {
+    height: 30px;
+    width: 1280px;
+    background-color: #1F7354;
+   
+}
+
+    #footerNav ul li a {
+        line-height: 15px;
+        display: block;
+        color: #3A1700;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 12pt;
+        margin-top: 10px;
+        font-family: 'Heebo', sans-serif;
+        color: white;
+    }
+
+#copyRight {
+    color: white;
+    text-align: center;
+    background-color: #1F7354;
+    font-family: 'Heebo', sans-serif;
+    font-size: 10pt;
+}
+/*אודות*/
+.mainText {
+    height: 580px;
+    width: 500px;
+    margin-right: 10%;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-family: 'Heebo', sans-serif;
+}
+
+    .mainText > p, h1 {
+        font-family: 'Heebo', sans-serif;
+        text-align: right;
+        line-height: 1.5;
+        margin: 10px;
+        
+    }
+
+    .mainText > h1 {
+        color: #D9644A;
+    }
+
+
+
+
+#aboutImg {
+    background-image: url(../images/favicom.jpg);
+    width: 600px;
+    height: 620px;
+    border-radius: 10%;
+    margin-right: 300px;
+    padding-top: 40px;
+}
+#aboutBackground {
+    background-color: #F29494;
+    width: auto;
+    height: 700px;
+    padding-top: 8%;
+    
+       
+}
+
+#devPages {
+    list-style: circle;
+    padding-right: 10%;
+    font-family: 'Heebo', sans-serif;
+}
+
+    #devPages li a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Heebo', sans-serif;
+    }
+
+    #devPages li:hover a { 
+        text-decoration: underline;
+    }
+
+
+
+h1 { 
+    font-size: 35pt;
+}
+
+#picturesOfUs > img { 
+    border-radius: 100%;
+    display: inline-block;
+    height: 170px;
+    width: 130px;
+    padding: 5%;
+}
+/*<---טופס צור קשר-->*/
+.contactForm {
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    font-size: 14pt;
+    background-color: #2C7359;
+    color: white;
+    border-radius: 50px;
+    border-block-color: #F29494;
+    margin-bottom: 20px;
+   margin-top: 5%;
+}
+
+#Send {
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    margin-right: 35%;
+    font-size: 13pt;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 2%;
+}
+
+    #Send:hover {
+        background-color: #D9644A;
+        color: white;
+    }
+
+.reserInfo select {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    border: solid black 2px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8%;
+    font-family: 'Heebo', sans-serif;
+}
+
+.reserInfo {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-right: 25px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#openForm > h1,span{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+label {
+    display:inline-block;
+}
+
+input[type ='text'] {
+    height: 25px;
+    
+}
+
+input[type ='text'], textarea {
+    margin-bottom: 40px;
+    width: 420px;
+    font-size: 14pt;
+    text-align: center;
+    margin-right: 60px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.formBox { 
+    margin-right: 60px;
+}
+textarea {
+    height: 100px;
+   
+}
+
+#content { 
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+
+
+/*דף בית*/
+#pictureB2 {
+    width: 640px;
+    height: 400px;
+    float: left;
+    top: 300px;
+    display: inline;
+}
+
+#homeBlock1 { 
+    height: 500px;
+    background-image: url(../images/mainHeader.jpg);
+    margin-top: 3%;
+    
+}
+
+#phoneNote { 
+    font-size: 8px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+#homeBlock1 h1 {
+    font-size: 50px;
+    padding-right: 100px;
+    color: #12412D;
+   
+  
+}
+
+#open {
+    padding: 200px;
+    
+}
+
+#open > div { 
+    font-size: 24pt;
+}
+
+#table {
+    background-color: #2C7359;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10%;
+}
+
+
+
+#takeAway {
+    background-color: #F39E97;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    margin-right: 5%;
+}
+
+
+
+    #homeBlock1 div div {
+        padding-right: 100px;
+        
+    }
+
+#homeBlock1 div{
+    font-family: 'Heebo', sans-serif;
+}
+
+
+
+#homeBlock2 { 
+    
+    height: 400px;
+   
+}
+
+h2{ 
+    font-size: 50px;
+    text-align: center;
+}
+
+#homeBlock2 p {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    font-family: 'Heebo', sans-serif;
+}
+
+#aboutUs {
+    text-align: center;
+    height: 400px;
+    width: 640px;
+    background-color: #2C7359;
+    color: white;
+    display: inline-block;
+    
+}
+
+
+#homeBlock3 {
+    height: 400px;
+    width: 1270px;
+    background-color: #F2CCC2;
+}
+
+
+
+#homeBlock3 h2 {
+    background-color: #F39E97;
+    color: white;
+}
+
+#homeBlock4 {
+    height: 200px;
+   
+}
+
+
+/*המיוחדים שלנו*/
+
+.spacial img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  
+}
+
+.pictureEx {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+
+.pictureEx:hover { 
+    text-decoration: underline;
+}
+
+
+.spacial > div {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    padding: 30px;
+    
+
+}
+
+.spacial {
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+
+/*אירועים*/
+
+.eventContent {
+    text-align: center;
+    width: 350px;
+    padding: 30px;
+    height: 350px;
+    line-height: 2;
+}
+
+#eventHeadLine { 
+    text-align: center;
+}
+
+
+
+
+/*happy hour*/
+
+#happyHour, #happyPasta {
+    width: 617px;
+    height: 250px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+   
+}
+.sales h2 {
+    font-family: 'Concert One', cursive;
+    font-size: 60px;
+}
+
+    #happyHour {
+        background-color: #2C7359;
+    }
+
+#happyPasta {
+    background-color: #F39E97;
+}
+#pastaTime, #happyTime, h3 {
+    margin-top: 20px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}
+
+#activity {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    line-height: 1.5;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+
+/*תפריט פיצה*/
+
+#pizzaMenu {
+    background-image: url(../images/favicom.jpg);
+    height: 1900px;
+    color: #12402A;
+    
+   
+}
+
+    #pizzaMenu h1, h2 {
+        color: #D9644A;
+        font-family:'Karantina', cursive;
+        font-weight: 400;
+    }
+    #pizzaMenu h2 { 
+        
+        font-size: 36px;
+    padding-left: 250px;
+    }
+    #pizzaMenu > div {
+        height: 1850px;
+        background-color: white;
+        border-radius: 10px;
+        width: 1200px;
+        margin-right: 40px;
+    }
+    #pizzaMenu { 
+        padding-top: 30px
+    }
+.pizzaName {
+    font-weight: 400;
+    font-family: 'Karantina', cursive;
+}
+
+
+.pizzaInfo {
+    padding: 50px;
+
+}
+    .pizzaInfo div {
+       font-size: 30px;
+       font-weight: 300;
+        font-family: 'Karantina', cursive;
+    }
+.addition {
+    color: #D9644A;
+}
+
+.pizzaPicture {
+    padding-right: 230px;
+    padding-top: 40px;
+}
+.pizzaPicture img{ 
+    width: 200px;
+    height: 180px;
+}
+
+
+/*מפת אתר*/
+
+
+#favBackground {
+    background-image: url(../images/favicom.jpg);
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    margin-right: 300px;
+    padding-top: 40px;
+ 
+
+}
+
+#siteMapInfo {
+    background-color: white;
+    border-radius: 10%;
+    width: 500px;
+    height: 500px;
+    margin-right: 50px;
+    padding-top: 50px;
+}
+
+
+
+        #siteMapInfo h1 {
+            font-family: 'Heebo', sans-serif;
+            text-align: center;
+        }
+
+
+    #siteMapInfo li {
+        font-family: 'Heebo', sans-serif;
+        text-align: right;
+    }
+
+    #siteMapInfo h3 {
+        color: #D9644A;
+    }
+
+            #siteMapInfo h3 a {
+                text-decoration: none;
+                color: #D9644A;
+            }
+
+        .map { 
+            margin-right: 20px;
+            
+        }
+
+        .map ul li a { 
+            text-decoration: none;
+           
+            color: black;
+        }
+
+        .map ul li:hover a { 
+            text-decoration: underline;
+        }
+        .map h3:hover a { 
+            text-decoration: underline;
+        }
+      
+
+#pinkBackground {
+    background-color: #F29494;
+    width: 1280px;
+    height: 650px;
+    padding-top: 50px;
+}
+
+/*אירועים*/
+
+#eventHeadLine {
+    color: #D9644A;
+}
+
+.eventContent {
+    width: 610px;
+    height: 570px;
+    background-color: #06402A;
+    line-height: 2.5;
+    color: white;
+    margin-top: 3%;
+  
+  
+    
+}
+#part1, #part2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 14pt;
+}
+
+
+#eventImg {
+    width: 610px;
+    height: 630px;
+    float: left;
+    display: inline-block;
+    
+}
+
+#eventBlock { 
+    height: 600px;
+    display: inline;
+}
+
+#sendEvent {
+    margin-top: 6%;
+    height: 35px;
+    width: 300px;
+    background-color: #D9644A;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14pt;
+    border: none;
+}
+
+    #sendEvent:hover {
+        color: #06402A;
+        
+    }
+
+
+ /*  ---- גלריה מבוא לתכנות ---*/
+
+
+
+.galleryPhotos { 
+    display: none;
+    height: 40%;
+    margin-right: 10%;
+}
+#firstPhoto { 
+    display: block;
+}
+
+.pizzaSlides { 
+    position: relative;
+    height: 600px;
+    width: 400px;
+    border: black 1px;
+    margin-right: 30%;
+    margin-top: 5%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    float: left;
+    padding: 2%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    
+}
+
+.next {
+    left: 0;
+    
+}
+
+
+.photoNumber {
+    color: white;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+
+    .prev:hover,.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.column {
+   
+    width: 20%;
+    height: 150px;
+   margin-top: -10%;
+  margin-right: 45%;
+    
+}
+
+
+
+.demo {
+    opacity: 0.6;
+}
+
+    .active,.demo:hover {
+        opacity: 1;
+        border: 0.5px solid black;
+    }
+
+
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 5px;
+    color: white;
+    height: 20px;
+    width: 296px;
+    margin-right: 10%;
+   
+}
+
+#caption {
+    font-family: 'Heebo', sans-serif;
+}
+
+.row {
+    width: 630px;
+    margin-top: -50%;
+}
+
+
+
+
+
+
+    
+
+
